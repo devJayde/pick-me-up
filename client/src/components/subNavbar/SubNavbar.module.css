@@ -1,8 +1,11 @@
 .categories {
-  height: 4rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  /* position: sticky;
+  background-color: white;
+  top: 90px; */
 }
 
 .hashtag {

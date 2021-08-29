@@ -112,7 +112,7 @@ const Signup = ({ setIsSignUpClicked, clickCloseBtn }) => {
             </li>
             <li className={styles.item}>
               <input
-                type="text"
+                type="password"
                 onChange={handleInputValue("password")}
                 className={styles.text}
                 placeholder="비밀번호를 입력하세요"
@@ -120,7 +120,7 @@ const Signup = ({ setIsSignUpClicked, clickCloseBtn }) => {
             </li>
             <li className={styles.item}>
               <input
-                type="text"
+                type="password"
                 onChange={handleInputValue("password2")}
                 className={styles.text}
                 placeholder="비밀번호를 확인해주세요"

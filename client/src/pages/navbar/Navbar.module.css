@@ -2,8 +2,10 @@
 
 .header {
   width: 100%;
-  height: 150px;
+  height: 90px;
   background-color: #fbc000;
+  position: sticky;
+  top: 0;
 }
 
 .contentbox {
@@ -14,7 +16,6 @@
   position: relative;
   top: 0px;
 }
-
 
 .title {
   position: absolute;
@@ -28,17 +29,17 @@
   cursor: pointer;
 }
 
-.btns{
-    width: 140px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: row;
+.btns {
+  width: 140px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .signbtn,
-.mypagebtn{
+.mypagebtn {
   width: 70px;
   height: 30px;
   border: 0;
@@ -47,48 +48,36 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 5px;
-
 }
 
-.mypagebtn{
+.mypagebtn {
   margin-left: 10px;
 }
-
 
 .signbtn:hover,
 .mypagebtn:hover {
   color: rgb(238, 235, 235);
-
 }
-
-
 
 /*반응형*/
 @media screen and (max-width: 33rem) {
-
-
-    .contentbox{
-        width: 28rem;
-    }
- 
-    .btns{
-      width: 140px;
-      height: 30px;
-      position: absolute;
-      right: 0;
-      display: flex;
-      flex-direction: row;
+  .contentbox {
+    width: 28rem;
   }
-  
+
+  .btns {
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
   .signbtn,
-  .mypagebtn{
+  .mypagebtn {
     width: 60px;
     margin-top: 5px;
     margin-left: 10px;
-    
-
   }
-  
 }
-
-

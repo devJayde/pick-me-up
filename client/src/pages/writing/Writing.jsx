@@ -68,8 +68,8 @@ const Writing = ({isLogin, feedList, feedsHandle}) => {
     // 해당 피드 페이지로 Redirect 필요
 
     if(title === '' || firstOpt === '' || secondOpt ==='' || firstImg === null || secondImg === null || content === '' || isClicked.length === 0){
-      return setErrorMessage('항목을 모두 입력하세요!🙏')
-    }
+      setErrorMessage('항목을 모두 입력하세요!🙏')
+    } else{
 
     // axios
     //   .post('https://localhost:4000/signin', 
@@ -90,17 +90,17 @@ const Writing = ({isLogin, feedList, feedsHandle}) => {
       tags: isClicked,
       createdAt: "2021-08-27"
     })
-    
+    }
   }
 
 
-  // if(!isLogin){
-  //   return (
-  //     <section action="" className={styles.container}>
-  //       <div>로그인이 필요합니다.</div>
-  //     </section>
-  //   )
-  // } else{
+  if(!isLogin){
+    return (
+      <section action="" className={styles.container}>
+        <div className={styles.loginMessage}>로그인이 필요합니다.</div>
+      </section>
+    )
+  } else{
     return (
       <section className={styles.container}>
 
@@ -146,7 +146,12 @@ const Writing = ({isLogin, feedList, feedsHandle}) => {
         </div>
     
         <div className={styles.submit}>
-          <button className={styles.submitBtn} onClick={createFeedHandle}>등록</button>
+          {title === '' || firstOpt === '' || secondOpt ==='' || firstImg === null || secondImg === null || content === '' || isClicked.length === 0 ? 
+            <button className={styles.submitBtn} onClick={createFeedHandle}>등록</button>
+          : 
+          <Link to="/">
+            <button className={styles.submitBtn} onClick={createFeedHandle}>등록</button>
+          </Link>}
           <Link to="/">
             <button className={styles.submitBtn}>취소</button>
           </Link>
@@ -155,7 +160,7 @@ const Writing = ({isLogin, feedList, feedsHandle}) => {
       
       </section>
       )
-    //}
+    }
 };
 
 export default Writing;

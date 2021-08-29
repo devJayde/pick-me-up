@@ -82,7 +82,7 @@ const Signin = ({clickCloseBtn, handleResponseSuccess }) => {
                 <input type="text" className={styles.text} onChange={handleInputValue('userId')} placeholder="아이디를 입력하세요"/>
           </li>
           <li className={styles.item}>
-                <input type="text" className={styles.text} onChange={handleInputValue('password')} placeholder="비밀번호를 입력하세요"/>
+                <input type="password" className={styles.text} onChange={handleInputValue('password')} placeholder="비밀번호를 입력하세요"/>
           </li>
          
           {
