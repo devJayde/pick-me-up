@@ -1,6 +1,5 @@
-import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Signin from "../../components/signin/Signin";
 import styles from "./Navbar.module.css";
 
@@ -8,14 +7,12 @@ const Navbar = ({
   handleResponseSuccess,
   onSignout,
   isLogin,
-  info,
   setListRender,
   isAuthenticated,
   setInfo,
   accessToken,
 }) => {
   //props로 isSignIn받고 true일경우 login/ false일경우 logout버튼
-  const history = useHistory();
   const [isSigninClicked, setIsSigninClicked] = useState(false);
 
   const clickSigninBtn = () => {
@@ -40,11 +37,9 @@ const Navbar = ({
 
   const handleFollow = () => {
     setScrollY(window.pageYOffset);
-    if(ScrollY > 400) {
-      // 400 이상이면 버튼이 보이게
+    if(ScrollY > 400) { // 400 이상이면 버튼이 보이게
       setBtnStatus(true);
-    } else {
-      // 400 이하면 버튼이 사라지게
+    } else { // 400 이하면 버튼이 사라지게
       setBtnStatus(false);
     }
   }

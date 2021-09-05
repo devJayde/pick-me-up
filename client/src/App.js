@@ -17,7 +17,6 @@ import ScrollButton from "./components/scrollButton/ScrollButton";
 import axios from "axios";
 import Update from "./pages/update/Update";
 import MyinfoModify from "./pages/myinfoModify/MyinfoModify";
-import NullPage from "./components/NullPage/Nullpage";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 
 
@@ -70,7 +69,7 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("useEffect...");
+    //console.log("useEffect...");
     const url = new URL(window.location.href);
     const authorizationCode = url.searchParams.get("code");
 
@@ -321,23 +320,6 @@ function App() {
       console.log(error);
     }
 
-    // .then((res) => {
-    //   localStorage.setItem("accessToken", res.data.access_token);
-    //   setAccessToken(res.data.access_token);
-    //   const refreshToken = localStorage.getItem("refreshToken");
-    //   console.log(res.data);
-    //   if (!refreshToken) {
-    //     //최초 1회
-    //     //회원가입, 로그인 시켜줌.
-    //     localStorage.setItem("refreshToken", res.data.refresh_token);
-
-    //     setIsGoogle(true);
-    //   } else {
-    //     setIsGoogle(true);
-    //     //이미 가입한 user
-    //     //로그인 시켜줌.
-    //   }
-    // });
   };
 
   return (
@@ -415,10 +397,6 @@ function App() {
                     />
                   </Route>
                 ) : null}
-                {/* <Route path="/feedresult">
-                  <FeedResult feed={selectedResult}/>
-                </Route> */}
-                {/* 이부분 투표창에서 새로고침시 페이지 사라지는거 막아야함 */}
               </Switch>
             </ScrollTop>
           </main>

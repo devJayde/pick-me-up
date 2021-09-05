@@ -1,11 +1,11 @@
 import styles from "./Modifydone.module.css";
-import React, { useState } from "react";
+import React from "react";
 
 //"수정되었습니다" 모달
 //재사용안되면 긁어다사용하세옴
 
 const Modifydone = ({}) => {
-  const clickNo = () => {};
+  //const clickNo = () => {};
 
   const clickYes = () => {};
 

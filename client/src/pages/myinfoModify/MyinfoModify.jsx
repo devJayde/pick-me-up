@@ -1,15 +1,13 @@
 import styles from "./MyinfoModify.module.css";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router";
-import RealVote from "../../components/modals/RealVote";
 import NullPage from "../../components/NullPage/Nullpage";
 import { createBrowserHistory } from "history";
 import { Link } from "react-router-dom";
 // axios.defaults.withCredentials = true;
 const MyinfoModify = ({
   info,
-  setInfo,
   accessToken,
   setAccessToken,
   isAuthenticated,
@@ -45,7 +43,7 @@ const MyinfoModify = ({
   };
 
   const realModify = () => {
-    console.log(nickname, "---------------");
+    //console.log(nickname, "---------------");
     axios
       .post(
         `http://ec2-3-34-191-91.ap-northeast-2.compute.amazonaws.com/user/profile/${info.id}`,
@@ -104,14 +102,6 @@ const MyinfoModify = ({
                     className={styles.faceimg}
                   ></img>
                 </span>
-                {/* <label for="profileEdit" className={styles.editbox}>
-                  프로필사진 수정
-                </label> */}
-                {/* <input
-                type="file"
-                id="profileEdit"
-                className={styles.editbtn}
-              ></input> */}
               </div>
               <div className={styles.textbox}>
                 <div className={styles.ulbox}>

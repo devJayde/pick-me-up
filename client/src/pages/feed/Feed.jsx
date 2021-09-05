@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Vote from '../../components/vote/Vote';
 import VoteResult from '../../components/voteResult/VoteResult';
 import styles from './Feed.module.css';
@@ -36,8 +36,6 @@ const Feed = ({feed, accessToken, isLogin, setListRender}) => {
         //투표 안 한 사람
         //투표하기 요청 보내기
         if(clickedOpt === el.option1){
-          //axios요청. postId, userId, option 
-          //postId = FeedVoted.id
           axios.post('http://ec2-3-34-191-91.ap-northeast-2.compute.amazonaws.com/vote', {
             postId: feed.id, //피드 pr키
             option: 1 

@@ -1,9 +1,7 @@
 import styles from "./Myinfo.module.css";
-import React, { useState } from "react";
+import React from "react";
 import NullPage from "../NullPage/Nullpage";
 import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
-import axios from "axios";
 
 const Myinfo = ({ info, accessToken, isLogin }) => {
   const history = useHistory();
@@ -33,14 +31,6 @@ const Myinfo = ({ info, accessToken, isLogin }) => {
             </div>
             <div className={styles.textbox}>
               <div className={styles.ulbox}>
-                {/* <span className={styles.list}>
-                  아이디:
-                  <input
-                    className={styles.input}
-                    value={info.userid}
-                    readOnly
-                  ></input>
-                </span> */}
                 <span className={styles.list}>
                   닉네임:
                   <input

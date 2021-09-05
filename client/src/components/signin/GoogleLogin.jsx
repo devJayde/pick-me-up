@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+
 const GoogleLogin = () => {
   //   const [accessToken, setAccessToken] = useState();
   //   const [info, setInfo] = useState();

@@ -16,8 +16,10 @@
   display: flex;
   opacity: 0.8;
   box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+  transition: 0.4s;
 }
 
 .topBtnActive {
-  display: none;
+  bottom: -20%;
+  right: 1.5rem;
 }

@@ -1,5 +1,5 @@
 import styles from "./RealVote.module.css";
-import React, { useState } from "react";
+import React from "react";
 
 const RealVote = ({ feed, handleVote, handleFeedVote, clickOptReset }) => {
 
