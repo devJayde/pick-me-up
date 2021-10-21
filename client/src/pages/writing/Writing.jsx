@@ -122,7 +122,7 @@ const Writing = ({ accessToken, isLogin, setListRender }) => {
     ) {
       setErrorMessage("항목을 모두 입력하세요!🙏");
     } else {
-      console.log("*********************", accessToken);
+      //console.log("*********************", accessToken);
       axios.post(
         "http://ec2-3-34-191-91.ap-northeast-2.compute.amazonaws.com/posting",
         {

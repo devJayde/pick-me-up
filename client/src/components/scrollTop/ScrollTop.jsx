@@ -1,7 +1,7 @@
 import { Component } from 'react'; 
 import { withRouter } from 'react-router'; 
 
-class ScrollToTop extends Component { 
+class ScrollTop extends Component { 
   componentDidUpdate(prevProps) { 
     if (this.props.location !== prevProps.location) { 
       window.scrollTo({
@@ -15,5 +15,5 @@ class ScrollToTop extends Component {
   } 
 } 
   
-export default withRouter(ScrollToTop)
+export default withRouter(ScrollTop)
 
