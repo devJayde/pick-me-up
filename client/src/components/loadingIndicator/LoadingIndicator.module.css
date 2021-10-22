@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0 auto;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.loadingGif {
+  height: 1rem;
+  margin-top: 1rem;
+}
+.counting {
+  color: rgb(79, 79, 79);
+}
+@media screen and (max-width: 500px) {
+  .container {
+    /*최상위 바디 컨테이너*/
+    width: 100%;
+    min-height: 70vh;
+  }
+}

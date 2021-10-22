@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+span {
+  display: block;
+}
+.container {
+  width: 100%;
+  height: 9rem;
+  padding: 1em;
+  background-color: whitesmoke;
+  color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+.contentbox {
+  width: 500px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamname {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  margin-bottom: 2rem;
+  color: rgb(85, 85, 85);
+}
+.nameList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+  color: rgb(116, 116, 116);
+}
+.member:link {
+  margin: 0 0.4rem;
+  font-size: 0.7rem;
+  color: rgb(116, 116, 116);
+  white-space: nowrap;
+}
+.member:hover {
+  color: rgb(106, 126, 191);
+}
+.rights {
+  font-size: 0.5rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  .contentbox {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .container {
+    height: 6rem;
+  }
+  .contentbox {
+    height: 100%;
+  }
+  .teamname {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .member:link {
+    font-size: 0.5rem;
+  }
+  .rights {
+    font-size: 0.2rem;
+  }
+}

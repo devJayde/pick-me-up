@@ -1,0 +1,67 @@
+/* 상위 컴포넌트에서 flex걸어서 로그인창 가운데정렬하기  */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+span {
+  display: block;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+}
+
+.realVote {
+  width: 30em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbc000;
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 140px;
+  font-weight: bold;
+}
+
+.title {
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  font-family: "Fredoka One", cursive;
+}
+
+.btns {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.btn {
+  outline: none;
+  background-color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-family: "Fredoka One", cursive;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .realVote {
+    width: 100%;
+  }
+}

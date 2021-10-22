@@ -1,0 +1,139 @@
+.textBoxTitle {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid rgb(193, 193, 193);
+}
+.textBoxOpt {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid rgb(193, 193, 193);
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+textarea {
+  width: 100%;
+  border: 1px solid rgb(193, 193, 193);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 2rem 8rem 2rem;
+  width: 500px;
+  height: 80vh;
+  color: rgb(85, 85, 85);
+  font-size: 0.8rem;
+}
+
+.category {
+  margin-bottom: 1rem;
+}
+.filebox {
+  display: flex;
+  align-items: end;
+  height: 2rem;
+}
+
+.filebox input[type="file"] {
+  cursor: pointer;
+  color: grey;
+  font-size: 0.7rem;
+  border: 1px solid rgb(193, 193, 193);
+  border-top: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.35rem;
+}
+
+.fileView {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgb(193, 193, 193);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.tags {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hashtag {
+  cursor: pointer;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.65rem;
+  margin-right: 0.3rem;
+  white-space: nowrap;
+}
+
+.hashtagClicked {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.65rem;
+  margin-right: 0.3rem;
+  border: none;
+  color: white;
+  border: 1px solid rgb(48, 48, 48);
+  background-color: rgb(48, 48, 48);
+  white-space: nowrap;
+}
+
+.submitBtn {
+  margin: 0 1rem;
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  background-color: rgb(250, 206, 27);
+  transition: 0.3s;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.subTitle {
+  display: inline-block;
+  font-size: 0.2rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.loginMessage {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+
+    padding: 5rem 0.5rem 8rem 0.5rem;
+  }
+  .tags {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-height: 850px) {
+  .container {
+    padding: 2.5rem 0.5rem 5rem 0.5rem;
+    height: 700px;
+  }
+}

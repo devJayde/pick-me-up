@@ -1,0 +1,41 @@
+/*
+app을 한번 감싸서 
+안에 컴포넌트 컨테이너를 100%으로 두면 될지 확인
+*/
+
+/* .body{
+    border: 2px solid black;
+    margin: 0 auto;
+    width:70rem;
+} */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.body {
+  width: 100%;
+  margin: 0 auto;
+}
+#page {
+  z-index: 1;
+}
+
+@media screen and (max-width: 62rem) {
+  .body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

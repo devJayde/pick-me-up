@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+span {
+  display: block;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.signup {
+  width: 30em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.titlebox {
+  font-family: "Fredoka One", cursive;
+  background-color: #fbc000;
+  height: 4rem;
+  color: white;
+  position: relative;
+}
+.title {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  top: 17%;
+  left: 30%;
+  font-size: 2rem;
+  color: black;
+}
+.close {
+  position: absolute;
+  background-color: #fbc000;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  color: black; /*아이콘 들어갈예정*/
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+}
+.item {
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+}
+.text {
+  border: 0;
+  border-bottom: 1px solid grey;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2.5em;
+  font-size: 1rem;
+  text-indent: 1rem;
+  outline: none;
+}
+
+/* .button {
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.1rem solid black;
+  outline: 0;
+}
+
+.button:hover {
+
+  color: rgb(82, 78, 78);
+} */
+
+/*존재하는 경우*/
+/* .label{
+  border:1px solid black;
+  display: none;
+  width: 50%; 
+  height: 15%;
+  border: 0 ;
+  font-size: 13px;
+  padding: 5px 5px;
+  color: red;
+} */
+
+.signupBtn {
+  font-family: "Fredoka One", cursive;
+  width: 100%;
+  height: 4em;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.2rem solid black;
+  outline: 0;
+}
+
+.signupBtn:hover {
+  color: white;
+  background-color: #fbc000;
+}
+
+.alert {
+  color: red;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .signup {
+    width: 100%;
+  }
+}
