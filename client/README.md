@@ -1,4 +1,6 @@
-# :ballot_box:Pick me up:ballot_box: 
+
+# :ballot_box:Pick me up:ballot_box:
+
 
 ## 👩🏻‍💻 Project
 
@@ -12,7 +14,7 @@
 
 일상에서 매 순간 마주하게 되는 크고 작은 선택의 기로.
 
-당신의 선택을 도와드립니다. 
+당신의 선택을 도와드립니다.
 
 이것과 저것 중에 너무너무 고민이 된다면,
 
@@ -27,37 +29,39 @@
 
 진지한 고민을 할때도, 그냥 심심할 때에도! 가볍게 사용하기 좋겠죠?
 
-
-
 ### 🚀 **[Pick me up 둘러보기](http://pickmeup-client.s3-website.ap-northeast-2.amazonaws.com/)**
 
-
 ## 🔨 Stack
+
 <img width="950" alt="stack" src="https://images.velog.io/images/devjade/post/3bb88f88-56eb-41af-9427-22ffec05b041/image.png">
 
 ## 📱 Client Flow Chart
+
 <img width="700" alt="stack" src="https://images.velog.io/images/devjade/post/4dfa3fd3-19fa-4768-a9ec-6f8336642e62/image.png">
 
 ## 🌳 DB Schema
-<img width="700" alt="dbschema" src="https://media.discordapp.net/attachments/881736017311334420/883167629840363530/2021-09-02_09-32-33.png">
 
+<img width="700" alt="dbschema" src="https://media.discordapp.net/attachments/881736017311334420/883167629840363530/2021-09-02_09-32-33.png">
 
 ## 👀 App View
 
 ### 메인 랜딩 페이지(웹)
+
 <img width="600" alt="" src="https://images.velog.io/images/devjade/post/0871fec2-0216-46d1-8773-e70c88d02620/pickmeup_1.gif">
 
 ### 메인 랜딩 페이지(모바일)
+
 <img width="280" alt="" src="https://images.velog.io/images/devjade/post/b90fd6be-fe9a-4899-b4fc-56c15f52ef59/pickmeup_2.gif">
 
+더 자세한 기능은 직접 서비스에 접속하셔서 생생하게 확인해보세요!
 
-더 자세한 기능은 직접 서비스에 접속하셔서 생생하게 확인해보세요! 
 ### 🚀 **[Pick me up 둘러보기](http://pickmeup-client.s3-website.ap-northeast-2.amazonaws.com/)**
 
 ## 👨‍👧‍👧Team Pickme
-| 이름(깃헙링크) | Position & Role|
-| ------- | ----- |
-| [문순려](https://github.com/Sunryeo) | 💻 Back-end|
-| [박지영](https://github.com/devjade) | 💻 Front-end|
-| [유다희](https://github.com/tkdkagody) | 💻 Front-end|
-| [이동욱](https://github.com/dongukuklee) | 💻 Back-end|
+
+| 이름(깃헙링크)                           | Position & Role |
+| ---------------------------------------- | --------------- |
+| [문순려](https://github.com/Sunryeo)     | 💻 Back-end     |
+| [박지영](https://github.com/devjade)     | 💻 Front-end    |
+| [유다희](https://github.com/tkdkagody)   | 💻 Front-end    |
+| [이동욱](https://github.com/dongukuklee) | 💻 Back-end     |

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Update.module.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import AWS from "aws-sdk";
 
 axios.defaults.withCredentials = true;
 
@@ -35,26 +36,66 @@ const Update = ({feed, accessToken, setListRender}) => { //수정하기 클릭�
     setSecondOpt(event.target.value);
   };
 
+  AWS.config.update({
+    region: "ap-northeast-2", // 버킷이 존재하는 리전을 문자열로 입력합니다. (Ex. "ap-northeast-2")
+    credentials: new AWS.CognitoIdentityCredentials({
+      IdentityPoolId: "ap-northeast-2:a17da5be-96ef-4046-aaa8-62455cef2362", // cognito 인증 풀에서 받아온 키를 문자열로 입력합니다. (Ex. "ap-northeast-2...")
+    }),
+  });
+
   const firstImgHandle = (event) => {
-    //input file에서 url만 긁어오는 핸들러
     const imageFile = event.target.files[0];
-    if (imageFile) {
-      const imageUrl = URL.createObjectURL(imageFile);
-      setFirstImg(imageUrl);
-    } else {
-      setFirstImg(null);
+    if (!imageFile) {
+      return setFirstImg(null);
     }
+
+    const upload = new AWS.S3.ManagedUpload({
+      params: {
+        Bucket: "pickmeupimagestorage",
+        Key: imageFile.name,
+        Body: imageFile,
+      },
+    });
+
+    const promise = upload.promise();
+
+    promise.then(
+      function (data) {
+        setFirstImg(data.Location);
+        console.log(data.Location);
+      },
+      function (err) {
+        console.log(err);
+      }
+    );
   };
 
   const secondImgHandle = (event) => {
     //input file에서 url만 긁어오는 핸들러
     const imageFile = event.target.files[0];
-    if (imageFile) {
-      const imageUrl = URL.createObjectURL(imageFile);
-      setSecondImg(imageUrl);
-    } else {
-      setSecondImg(null);
+    if (!imageFile) {
+      return setSecondImg(null);
     }
+
+    const upload = new AWS.S3.ManagedUpload({
+      params: {
+        Bucket: "pickmeupimagestorage",
+        Key: imageFile.name,
+        Body: imageFile,
+      },
+    });
+
+    const promise = upload.promise();
+
+    promise.then(
+      function (data) {
+        setSecondImg(data.Location);
+        console.log(data.Location);
+      },
+      function (err) {
+        console.log(err);
+      }
+    );
   };
 
   const tagHandle = (tag) => {
