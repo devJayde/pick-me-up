@@ -1,4 +1,6 @@
+
 # :ballot_box:Pick me up:ballot_box:
+
 
 ## 👩🏻‍💻 Project
 
@@ -63,3 +65,4 @@
 | [박지영](https://github.com/devJayde)    | 💻 Front-end    |
 | [유다희](https://github.com/tkdkagody)   | 💻 Front-end    |
 | [이동욱](https://github.com/dongukuklee) | 💻 Back-end     |
+
