@@ -43,7 +43,7 @@ const Writing = ({ accessToken, isLogin, setListRender }) => {
     setContent(event.target.value);
   };
 
-  //////////////////////이미지 핸들러(아래)///////////////////////////////
+  
   AWS.config.update({
     region: "ap-northeast-2", // 버킷이 존재하는 리전을 문자열로 입력합니다. (Ex. "ap-northeast-2")
     credentials: new AWS.CognitoIdentityCredentials({
@@ -105,7 +105,7 @@ const Writing = ({ accessToken, isLogin, setListRender }) => {
       }
     );
   };
-  //////////////////////이미지 핸들러(위)/////////////////////////////////////
+  
 
   const createFeedHandle = () => {
     // 피드테이블에 레코드 생성하는 axios POST 요청(지영)
